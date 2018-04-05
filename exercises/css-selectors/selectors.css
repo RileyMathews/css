@@ -1,0 +1,53 @@
+header {
+    border: 1px goldenrod solid;    
+}
+
+header li {
+    display: inline-block;
+}
+
+header li ~ li {
+    margin-left: 1em;
+}
+
+.disabled {
+    color: grey;
+}
+
+a .disabled {
+    color: purple;
+}
+
+.active {
+    color: yellow;
+}
+
+.blue {
+    color: blue;
+}
+
+.blue + h4 {
+    background-color: blue;
+}
+
+.red {
+    color: red;
+}
+
+.red + h4 {
+    background-color: red;
+}
+
+.grandparent > h4 {
+    border: 1px black solid;
+    border-radius: .5em;
+}
+
+.promo {
+    font-weight: bold;
+    color: gold;
+}
+
+input[type="text"] {
+    height: 25px;
+}
