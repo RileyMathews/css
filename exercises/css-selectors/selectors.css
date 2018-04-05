@@ -22,21 +22,22 @@ a .disabled {
     color: yellow;
 }
 
-.blue {
-    color: blue;
-}
-
-.blue + h4 {
-    background-color: blue;
-}
-
-.red {
+.parent > div > div {
     color: red;
 }
 
-.red + h4 {
+.parent > div > div + h4 {
     background-color: red;
 }
+
+.parent > div > div ~ div {
+    color: blue;
+}
+
+.parent > div > div ~ div + h4 {
+    background-color: blue;
+}
+
 
 .grandparent > h4 {
     border: 1px black solid;
